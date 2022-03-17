@@ -1,0 +1,32 @@
+.app__footer{
+    max-width: 100%;
+    margin-top: 10rem;
+    background-color: var(--light-blue);
+    padding: 5rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__footer-info{
+    display: flex;
+}
+.app__footer-info{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-blue);
+}
+.app__footer-info p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--gray-color);
+    margin: 2rem 0;
+    cursor: pointer;
+}
+@media (max-width:490px) {
+    .app__footer{
+        flex-direction: column;
+    }
+    .app__footer-info{
+        margin-top: 2rem;
+    }
+}

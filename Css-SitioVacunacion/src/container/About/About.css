@@ -1,0 +1,94 @@
+.app__about{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column!important;
+
+}
+
+.app__about-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+}
+.app__about-logos .logo{
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.app__about-logos .logo img {
+    max-width: 100% ;
+    height: auto;
+    object-fit: cover;
+    opacity: .25;
+    filter: grayscale(1);
+}
+
+.app__about-logos .logo:hover img {
+    filter: grayscale(0);
+}
+
+.app__about-title{
+    width: 40%;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+    color: var(--gray-color);
+    font-weight: 500;
+}
+.app__about-boxes{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    place-items: center;
+}
+.box{
+    max-width: 30rem;
+    height: 35rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+    border-radius: .5rem;
+    border: 1px solid var(--light-blue);
+}
+.box:hover {
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.box .icon-container{
+    width: 4rem;
+    height: 4rem;
+}
+.box h3 {
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--secondary-blue);
+}
+.box p{
+    color: var(--gray-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+}
+/* media queries */
+@media (max-width: 460px) {
+    .app__about-title{
+        width: 100%;
+    }
+    .app__about-logos .logo{
+        width: 100%;
+        height: 15rem;
+    }
+}
